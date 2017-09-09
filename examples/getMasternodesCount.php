@@ -1,8 +1,7 @@
 <?php
 require '../ChainCoin.php';
-require '../settings.php';
 
-$chaincoin = new ChainCoin($settings['user'], $settings['pass'], $settings['host'], $settings['port']);
+$chaincoin = new ChainCoin();
 $info = $chaincoin->callMethod('masternode', array(0 => 'count' ));
 
 if ($chaincoin->getError() == NULL)
