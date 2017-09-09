@@ -1,0 +1,12 @@
+{
+    "name": "chaincoin/php-api",
+    "description": "Communicate with chaincoin-cli via JSON-RPC",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Buzzo",
+            "email": "lcsbzo@gmail.com"
+        }
+    ],
+    "require": {}
+}
