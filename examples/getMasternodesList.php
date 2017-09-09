@@ -1,5 +1,5 @@
 <?php
-require '../ChainCoin.php';
+require __DIR__ . '/vendor/autoload.php';
 
 $chaincoin = new ChainCoin();
 $info = $chaincoin->callMethod('masternodelist');

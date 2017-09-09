@@ -46,10 +46,6 @@ class ChainCoin
 	protected $_id = 0;
 
 	/**
-	 * @param string $user     ChainCoin-RPC username
-	 * @param string $password ChainCoin-RPC password
-	 * @param string $host     ChainCoin host (default 127.0.0.1)
-	 * @param string $port     ChainCoin port (11995)
 	 *
 	 * @throws \Exception
 	 */
