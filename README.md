@@ -5,7 +5,7 @@ chaincoin/php-api is a simple wrapper for the chaincoin client's JSON-RPC API.
 
 `composer require chaincoin/php-api`
 
-**You need use at least the version v1.5.**
+**You need use at least the version v1.5.** (The last stable version is the v1.8)
 
 ## Start
 1. Use the command `composer require chaincoin/php-api` (You nee have the composer installed);
