@@ -11,6 +11,6 @@
     "require": {},
     "minimum-stability": "stable",
     "autoload": {
-      "files": ["ChainCoin.php", "settings.php"]
+      "files": ["ChainCoin.php"]
     }
 }
