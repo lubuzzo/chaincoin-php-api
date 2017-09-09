@@ -53,7 +53,7 @@ class ChainCoin
 	 *
 	 * @throws \Exception
 	 */
-	public function __construct($user, $password, $host = '127.0.0.1', $port = '11995')
+	public function __construct()
 	{
 		if (!extension_loaded('curl'))
 		{
