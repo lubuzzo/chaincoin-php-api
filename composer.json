@@ -8,5 +8,8 @@
             "email": "lcsbzo@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+      "files": ["ChainCoin.php"]
+    }
 }
