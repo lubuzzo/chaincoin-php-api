@@ -11,3 +11,10 @@ chaincoin/php-api is a simple wrapper for the chaincoin client's JSON-RPC API.
 1. Use the command `composer require chaincoin/php-api` (You nee have the composer installed);
 2. Update the file /vendor/chaincoin/php-api/settings.php with the ip, port, user e pass of your wallet;
 3. There are 2 examples (`getMasternodesCount` and `getMasternodesList`) in the `examples` folder.
+
+
+
+### Donate
+    
+    CHC: CbZWiRb6n9feAm6Li3iSH8CQYVi3i7Vyv5
+    BTC: 1ApcfjnaRNhGXE7U2rJK3YyyL1nTwH5sQm
