@@ -16,5 +16,5 @@ chaincoin/php-api is a simple wrapper for the chaincoin client's JSON-RPC API.
 
 ### Donate
     
-    CHC: CbZWiRb6n9feAm6Li3iSH8CQYVi3i7Vyv5
+    CHC: CdfzimC8ocon2rsStV1pDpcbx19n6K5cYF
     BTC: 1ApcfjnaRNhGXE7U2rJK3YyyL1nTwH5sQm
