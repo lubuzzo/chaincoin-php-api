@@ -1,10 +1,24 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
-$chaincoin = new ChainCoin();
-$info = $chaincoin->callMethod('masternode', array(0 => 'count' ));
+$chaincoin = new Chaincoin();
+$enabled = $chaincoin->callMethod(
+  'masternode',
+  array(
+    0 => 'count',
+    1 => 'enabled'
+  )
+);
+
+$total = $chaincoin->callMethod(
+  'masternode',
+  array(
+    0 => 'count',
+    1 => 'total'
+  )
+);
 
 if ($chaincoin->getError() == NULL)
-  echo "There are " . $info . " masternodes running";
+  echo "There are " . $enabled . "/" . $total . " masternodes running";
 else
   echo $chaincoin->getError();

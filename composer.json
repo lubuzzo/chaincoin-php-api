@@ -14,6 +14,6 @@
     },
     "minimum-stability": "stable",
     "autoload": {
-      "files": ["ChainCoin.php"]
+      "files": ["Chaincoin.php"]
     }
 }

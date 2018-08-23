@@ -5,7 +5,7 @@
  *
  * @author  Lucas Buzzo ( https://github.com/lubuzzo )
  */
-class ChainCoin
+class Chaincoin
 {
 	/**
 	 * Connect using secure http.
@@ -70,7 +70,7 @@ class ChainCoin
 	 * @param string $protocol The protocol to use. The PROTOCOL_ constants should be used.
 	 *
 	 * @return $this This object for method chaining.
-	 * @throws ChainCoinException Thrown if invalid protocol value passed.
+	 * @throws ChaincoinException Thrown if invalid protocol value passed.
 	 */
 	public function setProtocol($protocol)
 	{
@@ -83,7 +83,7 @@ class ChainCoin
 				$this->_protocol = "http";
 				break;
 			default:
-				throw new ChainCoinException("Invalid Protocol");
+				throw new ChaincoinException("Invalid Protocol");
 		}
 
 		return $this;
@@ -97,13 +97,13 @@ class ChainCoin
 	 * @param $filePath
 	 *
 	 * @return $this This object for method chaining.
-	 * @throws ChainCoinException
+	 * @throws ChaincoinException
 	 */
 	public function setCertificate($filePath)
 	{
 		if (!file_exists(realpath($filePath)))
 		{
-			throw new ChainCoinException("Invalid Certificate Path");
+			throw new ChaincoinException("Invalid Certificate Path");
 		}
 
 		$this->_cert = realpath($filePath);
@@ -152,7 +152,7 @@ class ChainCoin
 	 * @param array  $parameters Parameters for the method.
 	 *
 	 * @return array|false
-	 * @throws ChainCoinException
+	 * @throws ChaincoinException
 	 */
 	public function callMethod($methodName, array $parameters = array())
 	{
@@ -238,7 +238,7 @@ class ChainCoin
 					$this->_error = "HTTP_NOT_FOUND";
 					break;
 				default:
-					throw new ChainCoinException("An unexpected http response code was encountered!");
+					throw new ChaincoinException("An unexpected http response code was encountered!");
 			}
 		}
 
@@ -292,9 +292,9 @@ class ChainCoin
 }
 
 /**
- * General exception for ChainCoin-related issues. (Requires message).
+ * General exception for Chaincoin-related issues. (Requires message).
  */
-class ChainCoinException extends \Exception
+class ChaincoinException extends \Exception
 {
 	public function __construct($message, $code = 0, \Exception $previous = null)
 	{
